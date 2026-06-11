@@ -501,7 +501,7 @@ if (intent === "contact") {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 24, scale: 0.96 }}
             transition={{ duration: 0.25 }}
-            className="pointer-events-auto fixed bottom-28 right-5 flex h-[620px] max-h-[calc(100vh-9rem)] w-[430px] flex-col overflow-hidden rounded-[32px] border border-cyan-400/20 bg-slate-950/95 shadow-[0_0_55px_rgba(34,211,238,0.18)] backdrop-blur-2xl sm:w-[520px]"
+            className="pointer-events-auto fixed bottom-24 left-3 right-3 flex h-[560px] max-h-[calc(100vh-8rem)] w-auto flex-col overflow-hidden rounded-[28px] border border-cyan-400/20 bg-slate-950/95 shadow-[0_0_55px_rgba(34,211,238,0.18)] backdrop-blur-2xl sm:bottom-28 sm:left-auto sm:right-5 sm:h-[620px] sm:w-[520px] sm:rounded-[32px]"
           >
             <div className="relative shrink-0 overflow-hidden border-b border-slate-800/80 px-5 py-4">
               <div className="absolute -right-6 -top-8 h-28 w-28 rounded-full bg-cyan-400/10 blur-3xl"></div>
@@ -550,7 +550,7 @@ if (intent === "contact") {
                       }`}
                     >
                       <div
-                        className={`max-w-[86%] px-4 py-3 text-sm leading-6 shadow-sm ${
+                        className={`max-w-[92%] sm:max-w-[86%] px-4 py-3 text-sm leading-6 shadow-sm ${
                           message.role === "user"
                             ? "rounded-[22px] rounded-br-md bg-cyan-400 text-slate-950"
                             : "rounded-[22px] rounded-bl-md border border-slate-800 bg-slate-950/75 text-slate-200"
@@ -613,7 +613,7 @@ if (intent === "contact") {
                     type="text"
                     value={input}
                     onChange={(event) => setInput(event.target.value)}
-                    placeholder="Try: tell me about Adil, explain Orvix..."
+                    placeholder="Try: tell me about Adil"
                     className="min-w-0 flex-1 bg-transparent px-3 py-3 text-sm text-white outline-none placeholder:text-slate-500"
                   />
 
